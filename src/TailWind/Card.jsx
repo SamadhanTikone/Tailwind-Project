@@ -50,7 +50,7 @@ export default function Card() {
           <button className="hover:bg-blue-500 bg-cyan-400 w-50 pl-6 pr-6 pt-3 mt-5 pb-3 duration-500 text-white border-none rounded-full m-auto font-medium">
             Download Now <DownloadForOfflineIcon/>
           </button>
-          <img className="m-auto md:w-1/3 w-[80%]" src="../public/Typing-amico.svg" alt="image alternative" />
+          <img className="m-auto md:w-1/3 w-[80%]" src="./public/Typing-amico.svg" alt="image alternative" />
         </div>
       </div>
 
