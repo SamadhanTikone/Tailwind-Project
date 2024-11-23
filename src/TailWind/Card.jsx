@@ -39,7 +39,7 @@ export default function Card() {
           <img
             className="m-auto w-1/3"
             src="../public/Typing-amico.svg"
-            alt=""
+            alt="image alternative"
           />
         </div>
       </div>
