@@ -1,4 +1,4 @@
-import ThemeProvider from "./contexts/ThemeProvider";
+// import ThemeProvider from "./contexts/ThemeProvider";
 import Card from "./TailWind/Card";
 
 
@@ -6,11 +6,11 @@ function App() {
   return (
     <>
     
-     <ThemeProvider>
-      <div>
+     {/* <ThemeProvider>
+      <div> */}
         <Card/>
-      </div>
-     </ThemeProvider>
+      {/* </div>
+     </ThemeProvider> */}
     </>
   )
 }
