@@ -20,7 +20,7 @@ export default function Card() {
           </h2>
 
           {/* Menu Items */}
-          <div className={`absolute ${isOpen ? 'block bg-gray-500 text-white' : 'hidden'} md:block  left-0 md:static md:min-h-fit md:w-auto top-[25%] w-screen`}>
+          <div className={`absolute ${isOpen ? 'block bg-gray-500 md:bg-gray-300  text-white' : 'hidden'} md:block  left-0 md:static md:min-h-fit md:w-auto top-[25%] w-screen`}>
             <ul className="flex gap-6 py-4 md:gap-6 ml-6 md:flex-row flex-col justify-center items-center">
               {["Home", "Services", "Feature", "Team", "Testimonial", "Pricing", "Contact"].map((item) => (
                 <li key={item} className={`hover:text-blue-600 md:text-black text-sm font-semibold cursor-pointer uppercase p-2 opacity-80`} onClick={handleOpen}>
@@ -69,7 +69,7 @@ export default function Card() {
 
       {/* Footer Section */}
       <footer className="bg-gray-700 gap-10 px-8 py-12 flex flex-col sm:flex-row">
-        <p className="text-white text-lg w-1/2">All copy right to SAMADHAN TIOKNE</p>
+        <p className="text-white text-lg md:w-1/2 w-full ">All copy right to SAMADHAN TIOKNE</p>
         <p className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae harum laborum adipisci assumenda! Cum tenetur tempore ex praesentium optio officia, nam assumenda aperiam a perspiciatis sapiente velit consequuntur deserunt animi.</p>
       </footer>
     </>
