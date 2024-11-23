@@ -23,7 +23,7 @@ export default function Card() {
           <div className={`absolute ${isOpen ? 'block bg-gray-500 text-white' : 'hidden'} md:block  left-0 md:static md:min-h-fit md:w-auto top-[25%] w-screen`}>
             <ul className="flex gap-6 py-4 md:gap-6 ml-6 md:flex-row flex-col justify-center items-center">
               {["Home", "Services", "Feature", "Team", "Testimonial", "Pricing", "Contact"].map((item) => (
-                <li key={item} className={`hover:text-blue-600 md:text-black text-sm font-semibold cursor-pointer uppercase p-2 opacity-80`}>
+                <li key={item} className={`hover:text-blue-600 md:text-black text-sm font-semibold cursor-pointer uppercase p-2 opacity-80`} onClick={handleOpen}>
                   {item}
                 </li>
               ))}
