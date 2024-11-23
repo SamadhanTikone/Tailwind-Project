@@ -4,12 +4,15 @@ import Card from "./TailWind/Card";
 
 function App() {
   return (
-    <ThemeProvider>
+    <>
+    
+     <ThemeProvider>
       <div>
         <Card/>
       </div>
-    </ThemeProvider>
-  );
+     </ThemeProvider>
+    </>
+  )
 }
 
 export default App;
