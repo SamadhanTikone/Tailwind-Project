@@ -13,17 +13,17 @@ export default function Card() {
 
   return (
     <>
-      <div className="bg-gray-200 w-full relative">
+      <div className="bg-gray-300 pt-4 w-full relative">
         <nav className="flex justify-between items-center rounded-xl border border-blue-600 p-4 mt-6  md:px-8 mx-6">
           <h2 className="text-2xl uppercase opacity-100 font-serif text-blue-500 font-semibold ">
             Shine
           </h2>
 
           {/* Menu Items */}
-          <div className={`absolute ${isOpen ? 'block bg-[#646464] ' : 'hidden'} md:block  left-0 md:static md:min-h-fit md:w-auto top-[10%] w-screen`}>
-            <ul className="flex gap-8 py-4 md:gap-6 ml-6 md:flex-row flex-col justify-center items-center">
+          <div className={`absolute ${isOpen ? 'block bg-gray-500 text-white' : 'hidden'} md:block transition-all duration-500 left-0 md:static md:min-h-fit md:w-auto top-[14%] w-screen`}>
+            <ul className="flex gap-6 py-4 md:gap-6 ml-6 md:flex-row flex-col justify-center items-center">
               {["Home", "Services", "Feature", "Team", "Testimonial", "Pricing", "Contact"].map((item) => (
-                <li key={item} className={`hover:text-blue-600 text-black text-sm font-semibold cursor-pointer uppercase p-2 opacity-80`}>
+                <li key={item} className={`hover:text-blue-600 md:text-black text-sm font-semibold cursor-pointer uppercase p-2 opacity-80`}>
                   {item}
                 </li>
               ))}
